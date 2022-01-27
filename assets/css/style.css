@@ -1,0 +1,53 @@
+body{
+    display: grid;
+    place-items: center;
+}
+
+section{
+    height: 80vh;
+    width: 50vw;
+    margin-top: 5%;
+    position: relative;
+    /* background-color: antiquewhite; */
+}
+div{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 50%;
+    animation-name: run;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+.two{
+    animation-delay: 1.5s;
+}
+.three{
+    animation-delay: 3s;
+}
+.four{
+    animation-delay: 4.5s;
+}
+
+@keyframes run{
+    0%, 100%{
+        left:0;
+        top:0;
+    }
+    25%{
+        left:88%;
+        top:0;
+        background-color: yellow;
+    }
+    50%{
+        left:88%;
+        top:87%;
+        background-color: green;
+    }
+    75%{
+        left:0;
+        top:87%;
+        background-color: blue;
+    }
+}
